@@ -10,8 +10,9 @@ function modifyHtml(Title, Strong_color, Link){
     const strong = document.querySelectorAll('strong');
     strong[0].style.color = Strong_color;
 
-    let link = document.querySelector('a');
-    link.href = Link;
+    let links = document.querySelectorAll('a');
+    links[0].href = Link;
+    links[1].href = 'https://github.com/JinxYTW/JavaScriptTP.git';
 }
 
 modifyHtml('Polytech Dijon !', '#4691ff ', 'https://neal.fun/password-game/');
